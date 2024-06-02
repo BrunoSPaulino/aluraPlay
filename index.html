@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos-form.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/flexbox.css">
+    
     <title>AluraPlay</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
@@ -20,7 +22,9 @@
 
         <nav class="cabecalho__container">
 
-            <h1 class="logo__item" href="#"></h1>
+            <a href="../index.html">
+                <h1 class="logo__item"></h1>
+            </a>
 
             <div class="cabecalho__pesquisar__item">
                 <form action="">
@@ -31,7 +35,7 @@
             </div>
 
             <div class="cabecalho__icones__item">
-                <a href="#" class="cabecalho__videos"></a>
+                <a href="../pages/enviar-video.html" class="cabecalho__videos"></a>
                 <a href="#" class="cabecalho__apps"></a>
                 <a href="#" class="cabecalho__notificacoes"></a>
                 <a href="#" class="cabecalho__avatar"></a>
@@ -192,8 +196,8 @@
 
     <!-- Vídeos -->
 
-    <ul class="videos__container">
-        <li class="videos__item">
+    <ul class="videos__container" data-lista>
+    <!--<li class="videos__item">
             <iframe width="100%" height="72%" src="https://www.youtube.com/embed/pA-EgOaF23I"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -372,7 +376,7 @@
                 <h3>Por que o JavaScript é assim? | Memes JavaScript #01</h3>
                 <p>2,3 mil visualizações - Há 2 dias</p>
             </div>
-        </li>
+        </li> -->
     </ul>
 
     <!-- <Seção rodapé> -->
@@ -448,6 +452,10 @@
         </section>
     </footer>
 
+    <!-- <script src="../js/conectaApi.js"></script> -->
+    <script src="./js/mostrarVideos.js" type="module"></script>
+    <script src="./js/criarVideo.js" type="module"></script>
+    <script src="./js/buscarVideo.js" type="module"></script>
 </body>
 
 </html>
